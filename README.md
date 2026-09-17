@@ -2,227 +2,327 @@
 
 ## Project Overview
 
-This project presents an Excel and Power BI analysis of the global malaria burden, focusing on trends in malaria incidence, mortality, and deaths across 103 countries between 2000 and 2019.
+This project presents an Excel- and Power BI-based analysis of the global malaria burden across 103 countries from 2000 to 2019.
 
-The project was developed as a practical data analysis and visualization exercise using publicly available malaria datasets obtained from Kaggle. The analysis focuses on descriptive statistics, comparisons, and trends rather than predictive or inferential modelling.
+The analysis examines malaria incidence, mortality rates, deaths by age group, country-level mortality burden, high-incidence countries, and variations in malaria burden across regions and continents.
 
-The project demonstrates the application of data cleaning, data transformation, aggregation, analysis, and visualization techniques to convert multiple raw datasets into meaningful business-style insights and interactive dashboards.
+The project was developed to demonstrate a practical end-to-end data analysis workflow, from data preparation and integration through descriptive analysis, visualization, and interactive dashboard development.
 
----
-
-## Objectives
-
-The project aims to:
-
-- Examine trends in malaria incidence from 2000 to 2019.
-- Examine trends in malaria mortality rates over the study period.
-- Compare malaria deaths across different age groups.
-- Identify countries with the highest malaria mortality burden.
-- Identify countries with high malaria incidence.
-- Examine differences in malaria burden across regions and continents.
-- Present key findings through interactive Excel and Power BI dashboards.
+The analysis is descriptive and trend-focused. It does not use regression, correlation, or predictive modelling.
 
 ---
 
 ## Research Questions
 
-### RQ1
-How did malaria incidence and mortality rates change between 2000 and 2019?
+The project addresses six research questions:
 
-### RQ2
-Which age groups recorded the highest malaria mortality rates?
+1. **What trends can be observed in malaria incidence and mortality across the countries represented in the dataset from 2000 to 2019?**
 
-### RQ3
-Which countries recorded the highest malaria mortality burden based on the number of deaths and mortality rates?
+2. **How are malaria deaths and death rates distributed across different age groups, and which age groups are most affected?**
 
-### RQ4
-Which countries recorded the highest malaria incidence during the study period, and how did incidence change between 2000 and 2019?
+3. **Which countries record the highest malaria mortality burden based on the number of deaths and mortality rates?**
+
+4. **Which countries record the highest malaria incidence, and how do incidence patterns vary over the study period?**
+
+5. **How do malaria incidence, total deaths, and mortality rates compare among the countries with the greatest malaria burden?**
+
+6. **How does malaria burden vary across regions and continents among the countries represented in the dataset?**
 
 ---
 
 ## Dataset
 
-The original project dataset consisted of multiple malaria-related CSV files obtained from Kaggle.
+The project began with multiple malaria-related CSV datasets obtained from Kaggle.
 
-After reviewing and cleaning the available datasets, five datasets were selected for the final analysis based on data consistency, completeness, and relevance to the research questions.
-
-The final master dataset contains:
+Following data review, cleaning, validation, and integration, the final analytical dataset contained:
 
 - **103 countries**
 - **20 years (2000–2019)**
 - **2,060 country-year records**
-- Malaria incidence data
-- Mortality rates
+- Malaria incidence
+- All-age death rates
 - Deaths by age group
+- Death rates by age group
 - Standardized mortality rates
 - Region
 - Continent
 
-Aggregate entities and records that did not represent individual countries were excluded from the final country-level analysis.
+Aggregate entities and unsuitable records were excluded from the final country-level analysis.
 
 ---
 
-## Data Preparation and Cleaning
+## Data Preparation
 
-The raw datasets required preparation before analysis.
+The original datasets contained differences in structure, coverage, and data consistency. Data preparation was therefore an important part of the project.
 
-The main data preparation activities included:
+The main preparation steps included:
 
-1. Reviewing the available CSV datasets.
-2. Identifying datasets suitable for the research questions.
-3. Removing unsuitable or inconsistent records.
-4. Aligning datasets using country/entity and year.
-5. Merging the selected datasets using Power Query.
-6. Checking for missing and inconsistent records.
-7. Removing aggregate entities from the final country-level dataset.
-8. Adding region and continent classifications using a country lookup table.
-9. Validating the final dataset to ensure that each country contained records for the required study years.
+1. Reviewing the available malaria datasets.
+2. Identifying datasets relevant to the research questions.
+3. Removing unsuitable and inconsistent records.
+4. Cleaning entity and year fields.
+5. Aligning datasets by country/entity and year.
+6. Merging the selected datasets using **Power Query**.
+7. Validating the resulting records for completeness.
+8. Removing aggregate entities from the final country-level dataset.
+9. Creating a country lookup for region and continent classification.
+10. Populating region and continent fields in the final master dataset.
+11. Verifying that the final dataset contained 103 countries covering 2000–2019.
 
-The final dataset contains a complete 20-year period for each of the 103 countries.
+The resulting master dataset was then used as the basis for the Excel analysis and Power BI dashboard.
 
 ---
 
-## Tools Used
+## Analytical Approach
 
-### Microsoft Excel
+The project uses descriptive and comparative analysis to examine malaria burden.
 
-Excel was used for:
+### Key analytical techniques
 
-- Data cleaning and preparation
-- Power Query
+- Data cleaning
 - Data transformation
+- Data integration
+- Power Query
 - PivotTables
 - PivotCharts
+- Average calculations
+- Total and cumulative calculations
+- Percentage calculations
+- Year-on-year trend analysis
+- Country comparisons
+- Age-group comparisons
+- Regional and continental comparisons
+- Interactive dashboard visualization
+
+No regression, correlation, or predictive modelling was applied.
+
+---
+
+# Key Findings
+
+## RQ1 — Malaria Incidence and Mortality Trends
+
+The analysis showed a substantial overall decline in both malaria incidence and mortality during the study period.
+
+Average malaria incidence declined by approximately **46.0%** between 2000 and 2019.
+
+Average malaria mortality, based on the all-age death rate, declined by approximately **47.0%** over the same period.
+
+Overall, the findings indicate a downward trend in both malaria incidence and mortality across the countries represented in the final dataset.
+
+---
+
+## RQ2 — Mortality by Age Group
+
+The analysis examined both the number of deaths and death rates across five age groups:
+
+- Under 5
+- 5–14
+- 15–49
+- 50–69
+- 70+
+
+The **under-5 age group recorded the largest share of malaria deaths**, accounting for approximately **63% of cumulative deaths** in the final analysis.
+
+The under-5 group also recorded the highest average death rate among the age groups analysed.
+
+This highlights the substantial contribution of malaria mortality among young children within the countries and period covered by the dataset.
+
+---
+
+## RQ3 — Countries with the Highest Mortality Burden
+
+Two measures were used to examine country-level malaria mortality:
+
+1. **Cumulative number of deaths**
+2. **Average mortality rate**
+
+The results showed different patterns depending on the measure used.
+
+### Highest cumulative deaths
+
+**Nigeria** recorded the highest cumulative number of malaria deaths during the study period, with approximately **4.61 million deaths**.
+
+Other countries with high cumulative death counts included:
+
+- Democratic Republic of the Congo
+- India
+- Uganda
+- Burkina Faso
+- Côte d'Ivoire
+- Ghana
+- Niger
+- Mozambique
+- Mali
+
+### Highest average mortality rate
+
+When mortality was assessed using the average standardized mortality rate, **Sierra Leone** recorded the highest average value at approximately **244.14**.
+
+Other countries with high average standardized mortality rates included:
+
+- Burkina Faso
+- Côte d'Ivoire
+- Liberia
+- Nigeria
+- Niger
+- Benin
+- Cameroon
+- Mozambique
+- Mali
+
+The comparison demonstrates why both absolute deaths and mortality rates are useful when assessing malaria burden.
+
+---
+
+## RQ4 — Countries with the Highest Malaria Incidence
+
+Countries with the highest average malaria incidence during the study period included:
+
+| Country | Average Incidence |
+|---------|------------------:|
+| Burkina Faso | 508.18 |
+| Benin | 426.93 |
+| Sierra Leone | 417.10 |
+| Côte d'Ivoire | 409.64 |
+| Mali | 403.19 |
+| Democratic Republic of the Congo | 396.11 |
+| Central African Republic | 394.75 |
+| Mozambique | 391.91 |
+| Uganda | 385.25 |
+| Guinea | 384.46 |
+
+The analysis also examined changes in incidence between 2000 and 2019.
+
+For example:
+
+- Burkina Faso: approximately **39.3% decline**
+- Benin: approximately **5.2% decline**
+- Sierra Leone: approximately **26.1% decline**
+- Côte d'Ivoire: approximately **44.9% decline**
+- Mali: approximately **17.9% decline**
+- Democratic Republic of the Congo: approximately **31.7% decline**
+- Central African Republic: approximately **26.9% decline**
+- Mozambique: approximately **37.5% decline**
+- Uganda: approximately **46.1% decline**
+
+These results show that countries with high average incidence did not necessarily experience the same magnitude of change over the study period.
+
+---
+
+## RQ5 — Comparison Among Countries with the Greatest Malaria Burden
+
+The fifth research question brought together the major malaria indicators to provide a broader comparison of countries with high malaria burden.
+
+The analysis compared:
+
+- Malaria incidence
+- Total malaria deaths
+- Mortality rates
+
+The results showed that countries can occupy different positions depending on the measure used.
+
+For example, **Nigeria recorded the highest cumulative number of deaths**, while **Sierra Leone recorded the highest average standardized mortality rate**. **Burkina Faso recorded the highest average malaria incidence** among the countries analysed.
+
+This demonstrates that malaria burden is multidimensional and that total deaths, incidence, and mortality rates provide different perspectives on country-level burden.
+
+---
+
+## RQ6 — Regional and Continental Variation
+
+The analysis also examined malaria burden across the regions and continents represented by the 103 countries.
+
+The regional and continental analysis showed that **Africa accounted for the largest malaria burden** among the geographical groupings represented in the final dataset.
+
+The analysis used the final 103-country master dataset rather than relying on a separate regional aggregate dataset. This ensured that regional and continental comparisons were based on the same cleaned country-level records used throughout the project.
+
+---
+
+# Excel Analysis
+
+Microsoft Excel was used extensively throughout the project.
+
+### Excel tools and techniques included:
+
+- Power Query
+- PivotTables
+- PivotCharts
+- Data transformation
+- Lookup functions
 - Descriptive statistics
 - Percentage calculations
 - Trend analysis
 - Dashboard development
 
-### Microsoft Power BI
+PivotTables were used to summarize the data by:
 
-Power BI was used for:
+- Year
+- Country
+- Age group
+- Region
+- Continent
+- Incidence
+- Deaths
+- Mortality rate
 
-- Data modelling
-- DAX measures
-- Interactive visualizations
-- Slicers and filters
-- KPI cards
-- Trend analysis
-- Country and regional comparisons
-- Interactive dashboard development
-
----
-
-## Key Findings
-
-### 1. Incidence and Mortality Trends
-
-Average malaria incidence across the countries in the final dataset declined from **152.12 per 1,000 population at risk in 2000** to **82.27 in 2019**, representing an approximate **45.92% decline**.
-
-Average malaria mortality rate also declined over the study period, from **45.20 in 2000** to **23.98 in 2019**.
-
-The findings therefore show an overall downward trend in both malaria incidence and mortality during the study period.
+These summaries formed the basis for the project's analytical findings and visualizations.
 
 ---
 
-### 2. Mortality by Age Group
+# Power BI Dashboard
 
-The analysis showed that the **under-5 age group accounted for the largest number of malaria deaths** in the dataset.
+The cleaned master dataset was also imported into Power BI to create an interactive malaria dashboard.
 
-The distribution of deaths by age group was:
+The dashboard presents key indicators and allows users to explore malaria burden across countries and geographical groupings.
 
-| Age Group | Number of Deaths | Share |
-|-----------|-----------------:|------:|
-| Under 5 | 82,389,229 | 64% |
-| 5–14 | 9,961,223 | 8% |
-| 15–49 | 17,067,555 | 13% |
-| 50–69 | 14,307,146 | 11% |
-| 70+ | 5,572,326 | 4% |
+### Dashboard components include:
 
----
-
-### 3. Countries with High Mortality Burden
-
-Based on the total number of deaths recorded during the study period, the countries with the largest death counts included:
-
-- Nigeria — 4,610,044
-- Democratic Republic of the Congo — 1,683,887
-- India — 1,137,121
-- Uganda — 779,740
-- Burkina Faso — 714,360
-
-When mortality was assessed using the average standardized mortality rate, countries with high values included:
-
-- Sierra Leone — 244.14
-- Burkina Faso — 220.44
-- Côte d'Ivoire — 190.19
-- Liberia — 160.74
-- Nigeria — 148.95
-
-These measures provide different perspectives on malaria burden: total deaths reflect the number of deaths, while standardized mortality rates allow mortality levels to be compared using a rate-based measure.
-
----
-
-### 4. Countries with High Malaria Incidence
-
-Countries with high average malaria incidence during the study period included:
-
-- Burkina Faso — 508.18
-- Benin — 426.93
-- Sierra Leone — 417.10
-- Côte d'Ivoire — 409.64
-- Mali — 403.19
-- Democratic Republic of the Congo — 396.11
-- Central African Republic — 394.75
-- Mozambique — 391.91
-- Uganda — 385.25
-- Guinea — 384.46
-
-Several of these countries also experienced substantial reductions in incidence between 2000 and 2019.
-
----
-
-## Dashboard
-
-The project includes both **Excel and Power BI dashboards** designed to communicate the main findings interactively.
-
-The dashboard focuses on:
-
+- Total deaths
 - Malaria incidence trends
 - Mortality trends
 - Mortality by age group
 - Country-level mortality comparisons
 - Incidence comparisons
-- Regional and continental patterns
-- Interactive filtering and exploration
+- Regional and continental comparisons
+- Interactive filters and slicers
 
-The Power BI version provides additional interactivity through slicers, cross-filtering, KPI cards, and dynamic visual exploration.
+The Power BI dashboard complements the Excel analysis by allowing users to interact with the data and examine different aspects of malaria burden dynamically.
 
 ---
 
-## Project Workflow
+# Project Workflow
 
 ```text
-Raw CSV Datasets
-       ↓
-Data Review
-       ↓
-Dataset Selection
-       ↓
-Data Cleaning
-       ↓
-Power Query Transformation
-       ↓
-Dataset Merging
-       ↓
-Country / Region / Continent Mapping
-       ↓
-Final Master Dataset
-       ↓
-PivotTable & Descriptive Analysis
-       ↓
-Excel Dashboard
-       ↓
-Power BI Data Model & DAX
-       ↓
-Interactive Power BI Dashboard
+Kaggle Malaria Datasets
+          │
+          ▼
+    Data Review
+          │
+          ▼
+   Data Cleaning
+          │
+          ▼
+ Power Query Transformation
+          │
+          ▼
+     Dataset Merge
+          │
+          ▼
+ Country / Region / Continent Mapping
+          │
+          ▼
+ Final Master Dataset
+  103 Countries × 20 Years
+          │
+          ├───────────────┐
+          ▼               ▼
+      Excel            Power BI
+          │               │
+    PivotTables       Data Model
+    PivotCharts          DAX
+    Descriptive       Interactive
+      Analysis         Dashboard
+          │               │
+          └───────┬───────┘
+                  ▼
+           Key Findings
