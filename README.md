@@ -1,5 +1,7 @@
 # Global Malaria Burden: Trends, Mortality and Incidence
 
+[(C:\Projects\Projects 2026\Analysis Training\project\malaria\dataset final download)]
+
 ## Project Overview
 
 This project presents an Excel- and Power BI-based analysis of the global malaria burden across 103 countries from 2000 to 2019.
