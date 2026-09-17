@@ -1,6 +1,6 @@
 # Global Malaria Burden: Trends, Mortality and Incidence
 
-[(C:\Projects\Projects 2026\Analysis Training\project\malaria\dataset final download)]
+<img width="599" height="333" alt="Image" src="https://github.com/user-attachments/assets/cf06cfab-cf1b-4409-a31a-69ccda990a52" />
 
 ## Project Overview
 
