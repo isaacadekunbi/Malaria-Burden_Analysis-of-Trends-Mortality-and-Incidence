@@ -64,15 +64,8 @@ The project uses descriptive and comparative analysis to examine malaria burden.
 - Data transformation
 - Data integration
 - Power Query
-- PivotTables
-- PivotCharts
-- Average calculations
-- Total and cumulative calculations
-- Percentage calculations
-- Year-on-year trend analysis
-- Country comparisons
-- Age-group comparisons
-- Regional and continental comparisons
+- PivotTables and PivotCharts
+- Trend analysis and comparisons
 - Interactive dashboard visualization
 
 ---
