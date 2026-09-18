@@ -8,9 +8,9 @@ This project presents an Excel- and Power BI-based analysis of the global malari
 
 The analysis examines malaria incidence, mortality rates, deaths by age group, country-level mortality burden, high-incidence countries, and variations in malaria burden across regions and continents.
 
-The project was developed to demonstrate a practical end-to-end data analysis workflow, from data preparation and integration through descriptive analysis, visualization, and interactive dashboard development.
+The project demonstrates a practical end-to-end data analysis workflow, from data preparation and integration through descriptive analysis, visualization, and interactive dashboard development.
 
-The analysis is descriptive and trend-focused. It does not use regression, correlation, or predictive modelling.
+The analysis is descriptive and trend-focused. 
 
 ---
 
@@ -29,27 +29,6 @@ The project addresses six research questions:
 5. **How do malaria incidence, total deaths, and mortality rates compare among the countries with the greatest malaria burden?**
 
 6. **How does malaria burden vary across regions and continents among the countries represented in the dataset?**
-
----
-
-## Dataset
-
-The project began with multiple malaria-related CSV datasets obtained from Kaggle.
-
-Following data review, cleaning, validation, and integration, the final analytical dataset contained:
-
-- **103 countries**
-- **20 years (2000–2019)**
-- **2,060 country-year records**
-- Malaria incidence
-- All-age death rates
-- Deaths by age group
-- Death rates by age group
-- Standardized mortality rates
-- Region
-- Continent
-
-Aggregate entities and unsuitable records were excluded from the final country-level analysis.
 
 ---
 
@@ -95,8 +74,6 @@ The project uses descriptive and comparative analysis to examine malaria burden.
 - Age-group comparisons
 - Regional and continental comparisons
 - Interactive dashboard visualization
-
-No regression, correlation, or predictive modelling was applied.
 
 ---
 
@@ -242,32 +219,7 @@ The analysis used the final 103-country master dataset rather than relying on a 
 
 # Excel Analysis
 
-Microsoft Excel was used extensively throughout the project.
-
-### Excel tools and techniques included:
-
-- Power Query
-- PivotTables
-- PivotCharts
-- Data transformation
-- Lookup functions
-- Descriptive statistics
-- Percentage calculations
-- Trend analysis
-- Dashboard development
-
-PivotTables were used to summarize the data by:
-
-- Year
-- Country
-- Age group
-- Region
-- Continent
-- Incidence
-- Deaths
-- Mortality rate
-
-These summaries formed the basis for the project's analytical findings and visualizations.
+Microsoft Excel was used extensively throughout the project and PivotTables were used to summarize the data. These summaries formed the basis for the project's analytical findings and visualizations.
 
 ---
 
@@ -276,17 +228,6 @@ These summaries formed the basis for the project's analytical findings and visua
 The cleaned master dataset was also imported into Power BI to create an interactive malaria dashboard.
 
 The dashboard presents key indicators and allows users to explore malaria burden across countries and geographical groupings.
-
-### Dashboard components include:
-
-- Total deaths
-- Malaria incidence trends
-- Mortality trends
-- Mortality by age group
-- Country-level mortality comparisons
-- Incidence comparisons
-- Regional and continental comparisons
-- Interactive filters and slicers
 
 The Power BI dashboard complements the Excel analysis by allowing users to interact with the data and examine different aspects of malaria burden dynamically.
 
