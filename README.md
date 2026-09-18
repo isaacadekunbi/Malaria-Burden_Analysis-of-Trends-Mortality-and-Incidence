@@ -35,21 +35,6 @@ The project addresses six research questions:
 ## Data Preparation
 
 The original datasets contained differences in structure, coverage, and data consistency. Data preparation was therefore an important part of the project.
-
-The main preparation steps included:
-
-1. Reviewing the available malaria datasets.
-2. Identifying datasets relevant to the research questions.
-3. Removing unsuitable and inconsistent records.
-4. Cleaning entity and year fields.
-5. Aligning datasets by country/entity and year.
-6. Merging the selected datasets using **Power Query**.
-7. Validating the resulting records for completeness.
-8. Removing aggregate entities from the final country-level dataset.
-9. Creating a country lookup for region and continent classification.
-10. Populating region and continent fields in the final master dataset.
-11. Verifying that the final dataset contained 103 countries covering 2000–2019.
-
 The resulting master dataset was then used as the basis for the Excel analysis and Power BI dashboard.
 
 ---
